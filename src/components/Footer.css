@@ -1,0 +1,41 @@
+footer section {
+  justify-items: center;
+  width: 80%;
+  margin-left: 10%;
+  gap: 20px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #ee9972;
+  color: #495e57;
+}
+
+footer img {
+  height: 100px;
+  width: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 700px) {
+  header section,
+  footer section {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+  footer section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+  header section {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-items: center;
+  }
+}
